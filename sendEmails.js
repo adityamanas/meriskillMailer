@@ -80,20 +80,8 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-  // { name: 'Avinash Pandey', email: 'avinashpandey2492002@gmail.com' },
-  // { name: 'Lakshay Dhoundiyal', email: 'lakshay22dhoundiyal@gmail.com' },
-  // { name: 'Aditya Shrivastav', email: 'adityashrivastav567856@gmail.com' },
-  // { name: 'Shivani Rana', email: 'shivanirana417@gmail.com' },
-  // { name: 'Sanjana Sahani', email: 'sahani.sanjana06@gmail.com' },
-  // { name: 'Shakti Singh Rathaur', email: 'ssrrathaur068@gmail.com' },
-  // { name: 'Prachi Jaiswal', email: 'prachijaiswal438@gmail.com' },
-  // { name: 'Esha Jamwal', email: 'eshaj12345@gmail.com' },
-  // { name: 'Chirag Singhal', email: 'chiragsinghal8810@gmail.com' },
-  // { name: 'Afolabi Olajumoke Idowu', email: 'afolabiadeolaolajumoke@gmail.com' },
-  { name: 'Saransh Dwivedi', email: 'dwivedisaransh6@gmail.com' },
-  { name: 'Asad Abbas', email: 'asadabbas4338@gmail.com' },
-  { name: 'Chitranshi Srivastava', email: 'kalpana8765921869@gmail.com' },
-  { name: 'Anushka Sonker', email: 'anushkasonker916@gmail.com' }
+
+  { name: 'Aditya', email: 'aditya.manas01@gmail.com' }
 ];
 
 Promise.all(
@@ -101,7 +89,7 @@ Promise.all(
     sendEmailWithAttachment(
       recipient.email,
       "Job Offer",
-      "offerLetter",
+      "offerLetterMS",
       // "frontend",
       // "pdfTemplate",
       "frontendcopy",
