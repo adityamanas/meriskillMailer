@@ -55,11 +55,22 @@ async function sendEmailWithAttachment(
         pass: "jerhrfxedbegowav",
       },
     });
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtpout.secureserver.net",
+    //   port: 465,
+    //   secure: true,
+    //   auth: {
+    //     user: "no-reply@meriskill.com",
+    //     pass: "meriskill@cohi24",
+    //   },
+    // });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
+      // from: "no-reply@meriskill.com",
       from: "hrtechcertifysolution@gmail.com",
+
       to,
       subject,
       html: compiledEmailTemplate,
@@ -88,11 +99,9 @@ Promise.all(
   recipients.map((recipient) =>
     sendEmailWithAttachment(
       recipient.email,
-      "Job Offer",
-      "offerLetterMS",
-      // "frontend",
-      // "pdfTemplate",
-      "frontendcopy",
+      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your Data Analyst Program!      `,
+      "offerLetter",
+      "toutcAiEngineer",
       { name: recipient.name }
     )
   )
