@@ -48,28 +48,28 @@ async function sendEmailWithAttachment(
 
     const pdfBuffer = await generatePDF(compiledPdfTemplate);
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "hrtechcertifysolution@gmail.com",
-        pass: "jerhrfxedbegowav",
-      },
-    });
     // const transporter = nodemailer.createTransport({
-    //   host: "smtpout.secureserver.net",
-    //   port: 465,
-    //   secure: true,
+    //   service: "gmail",
     //   auth: {
-    //     user: "no-reply@meriskill.com",
-    //     pass: "meriskill@cohi24",
+    //     user: "hrtechcertifysolution@gmail.com",
+    //     pass: "jerhrfxedbegowav",
     //   },
     // });
+    const transporter = nodemailer.createTransport({
+      host: "smtpout.secureserver.net",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "no-reply@meriskill.com",
+        pass: "meriskill@cohi24",
+      },
+    });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      // from: "no-reply@meriskill.com",
-      from: "hrtechcertifysolution@gmail.com",
+      from: "no-reply@meriskill.com",
+      // from: "hrtechcertifysolution@gmail.com",
 
       to,
       subject,
@@ -91,55 +91,37 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
+
   {
-    "name": "Vraj Desai",
-    "email": "vrajdesai10@gmail.com"
+    "name": "Anushka Borude",
+    "email": "anushka.22311688@viit.ac.in"
 },
 {
-    "name": "Anshuman Vipul",
-    "email": "anshumanvipul@gmail.com"
+    "name": "Tejas shah",
+    "email": "tejas220505@gmail.com"
 },
 {
-    "name": "Gaurav Sharma",
-    "email": "sageking011@gmail.com"
-},
-{
-    "name": "Sanjana",
-    "email": "sanjana.kirodian@gmail.com"
+    "name": "Varnana Nambiar M",
+    "email": "varnana.nambiar@gmail.com"
 },
 {
     "name": "trupti",
     "email": "truptigavit@gmail.com"
 },
 {
-    "name": "Hariom Gupta",
-    "email": "guptahariom049@gmail.com"
-},
-{
-    "name": "shashank Pandey",
-    "email": "shashankpintu364@gmail.com"
-},
-{
-    "name": "Varun Raj",
-    "email": "mentor.varun@gmail.com"
-},
-{
-    "name": "Nivedita Chaurasia",
-    "email": "nivishalu7@gmail.com"
-},
-{
-    "name": "Aditya",
-    "email": "manas.23aug@gmail.com"
+    "name": "shareef",
+    "email": "shareefredmi2@gmail.com"
 }
+
 ];
 
 Promise.all(
   recipients.map((recipient) =>
     sendEmailWithAttachment(
       recipient.email,
-      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your Data Analyst Program!      `,
+      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your AI Developer Program!      `,
       "offerLetterMS",
-      "podhaDaWelcome",
+      "toutcAiEngineer",
       { name: recipient.name }
     )
   )

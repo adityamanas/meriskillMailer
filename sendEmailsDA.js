@@ -48,28 +48,28 @@ async function sendEmailWithAttachment(
 
     const pdfBuffer = await generatePDF(compiledPdfTemplate);
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "hrtechcertifysolution@gmail.com",
-        pass: "jerhrfxedbegowav",
-      },
-    });
     // const transporter = nodemailer.createTransport({
-    //   host: "smtpout.secureserver.net",
-    //   port: 465,
-    //   secure: true,
+    //   service: "gmail",
     //   auth: {
-    //     user: "no-reply@meriskill.com",
-    //     pass: "meriskill@cohi24",
+    //     user: "hrtechcertifysolution@gmail.com",
+    //     pass: "jerhrfxedbegowav",
     //   },
     // });
+    const transporter = nodemailer.createTransport({
+      host: "smtpout.secureserver.net",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "no-reply@meriskill.com",
+        pass: "meriskill@cohi24",
+      },
+    });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      // from: "no-reply@meriskill.com",
-      from: "hrtechcertifysolution@gmail.com",
+      from: "no-reply@meriskill.com",
+      // from: "hrtechcertifysolution@gmail.com",
 
       to,
       subject,
@@ -91,45 +91,34 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-  {
-    "name": "Vraj Desai",
-    "email": "vrajdesai10@gmail.com"
+
+{
+  "name":"venkata naga ganesh uka",
+  "email":"aditya.manas01@gmail.com"
 },
 {
-    "name": "Anshuman Vipul",
-    "email": "anshumanvipul@gmail.com"
+  "name": "Hritik",
+  "email": "dimriofficial16@gmail.com"
 },
 {
-    "name": "Gaurav Sharma",
-    "email": "sageking011@gmail.com"
+  "name": "Kajal Chaurasia",
+  "email": "kajalchaurasia2508@gmail.com"
 },
 {
-    "name": "Sanjana",
-    "email": "sanjana.kirodian@gmail.com"
+  "name": "Hammed Mustapha",
+  "email": "olaitann93@gmail.com"
 },
 {
-    "name": "trupti",
-    "email": "truptigavit@gmail.com"
+  "name": "Sachin Kumar Shakya",
+  "email": "sachin2019kkc@gmail.com"
 },
 {
-    "name": "Hariom Gupta",
-    "email": "guptahariom049@gmail.com"
+  "name": "Madhu Kumari Shaw",
+  "email": "shawmadhu555@gmail.com"
 },
 {
-    "name": "shashank Pandey",
-    "email": "shashankpintu364@gmail.com"
-},
-{
-    "name": "Varun Raj",
-    "email": "mentor.varun@gmail.com"
-},
-{
-    "name": "Nivedita Chaurasia",
-    "email": "nivishalu7@gmail.com"
-},
-{
-    "name": "Aditya",
-    "email": "manas.23aug@gmail.com"
+  "name": "Shruti Shruti",
+  "email": "shrutii32786356@gmail.com"
 }
 ];
 
