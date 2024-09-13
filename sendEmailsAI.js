@@ -48,13 +48,7 @@ async function sendEmailWithAttachment(
 
     const pdfBuffer = await generatePDF(compiledPdfTemplate);
 
-    // const transporter = nodemailer.createTransport({
-    //   service: "gmail",
-    //   auth: {
-    //     user: "hrtechcertifysolution@gmail.com",
-    //     pass: "jerhrfxedbegowav",
-    //   },
-    // });
+  
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
@@ -69,7 +63,7 @@ async function sendEmailWithAttachment(
 
     const mailOptions = {
       from: "no-reply@meriskill.com",
-      // from: "hrtechcertifysolution@gmail.com",
+
 
       to,
       subject,
@@ -93,25 +87,37 @@ async function sendEmailWithAttachment(
 const recipients = [
 
   {
-    "name": "Anushka Borude",
-    "email": "anushka.22311688@viit.ac.in"
-},
-{
-    "name": "Tejas shah",
-    "email": "tejas220505@gmail.com"
-},
-{
-    "name": "Varnana Nambiar M",
-    "email": "varnana.nambiar@gmail.com"
-},
-{
-    "name": "trupti",
-    "email": "truptigavit@gmail.com"
-},
-{
-    "name": "shareef",
-    "email": "shareefredmi2@gmail.com"
-}
+    "name": "Aisha Mazhar",
+    "email": "aishamazhar766@gmail.com"
+  },
+  {
+    "name": "Ayesha",
+    "email": "ayeshaqamar602@gmail.com"
+  },
+  {
+    "name": "Ashish",
+    "email": "cristianoashish173@gmail.com"
+  },
+  {
+    "name": "Ragda",
+    "email": "roody3dadyto@gmail.com"
+  },
+  {
+    "name": "Asad",
+    "email": "xioasad@gmail.com"
+  },
+  {
+    "name": "Anushka Shrivastava",
+    "email": "anushkashrivastava1018@gmail.com"
+  },
+  {
+    "name": "Nivedita Chaudhari",
+    "email": "niveditachaudhari661@gmail.com"
+  },
+  {
+    "name": "Savnesh Daksh",
+    "email": "savneshdaksh1234567890@gmail.com"
+  }
 
 ];
 

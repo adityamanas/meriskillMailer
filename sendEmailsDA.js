@@ -48,13 +48,7 @@ async function sendEmailWithAttachment(
 
     const pdfBuffer = await generatePDF(compiledPdfTemplate);
 
-    // const transporter = nodemailer.createTransport({
-    //   service: "gmail",
-    //   auth: {
-    //     user: "hrtechcertifysolution@gmail.com",
-    //     pass: "jerhrfxedbegowav",
-    //   },
-    // });
+
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
@@ -69,7 +63,7 @@ async function sendEmailWithAttachment(
 
     const mailOptions = {
       from: "no-reply@meriskill.com",
-      // from: "hrtechcertifysolution@gmail.com",
+
 
       to,
       subject,
@@ -92,34 +86,21 @@ async function sendEmailWithAttachment(
 
 const recipients = [
 
-{
-  "name":"venkata naga ganesh uka",
-  "email":"aditya.manas01@gmail.com"
-},
-{
-  "name": "Hritik",
-  "email": "dimriofficial16@gmail.com"
-},
-{
-  "name": "Kajal Chaurasia",
-  "email": "kajalchaurasia2508@gmail.com"
-},
-{
-  "name": "Hammed Mustapha",
-  "email": "olaitann93@gmail.com"
-},
-{
-  "name": "Sachin Kumar Shakya",
-  "email": "sachin2019kkc@gmail.com"
-},
-{
-  "name": "Madhu Kumari Shaw",
-  "email": "shawmadhu555@gmail.com"
-},
-{
-  "name": "Shruti Shruti",
-  "email": "shrutii32786356@gmail.com"
-}
+
+ 
+  {
+    "name": "Rohith Kalyan",
+    "email": "rohithkalyant@gmail.cocm"
+  },
+  {
+    "name": "Oluwadamilola",
+    "email": "sannioluwadamilola07@gmail.com"
+  },
+  {
+    "name": "Sravani Kethireddy",
+    "email": "sravanikethireddy11@gmail.com"
+  }
+
 ];
 
 Promise.all(

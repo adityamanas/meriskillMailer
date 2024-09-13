@@ -48,13 +48,7 @@ async function sendEmailWithAttachment(
 
     const pdfBuffer = await generatePDF(compiledPdfTemplate);
 
-    // const transporter = nodemailer.createTransport({
-    //   service: "gmail",
-    //   auth: {
-    //     user: "hrtechcertifysolution@gmail.com",
-    //     pass: "jerhrfxedbegowav",
-    //   },
-    // });
+
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
@@ -69,7 +63,7 @@ async function sendEmailWithAttachment(
 
     const mailOptions = {
       from: "no-reply@meriskill.com",
-      // from: "hrtechcertifysolution@gmail.com",
+
 
       to,
       subject,

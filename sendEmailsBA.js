@@ -48,13 +48,7 @@ async function sendEmailWithAttachment(
 
     const pdfBuffer = await generatePDF(compiledPdfTemplate);
 
-    // const transporter = nodemailer.createTransport({
-    //   service: "gmail",
-    //   auth: {
-    //     user: "hrtechcertifysolution@gmail.com",
-    //     pass: "jerhrfxedbegowav",
-    //   },
-    // });
+
     const transporter = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       port: 465,
@@ -69,7 +63,7 @@ async function sendEmailWithAttachment(
 
     const mailOptions = {
       from: "no-reply@meriskill.com",
-      // from: "hrtechcertifysolution@gmail.com",
+
 
       to,
       subject,
@@ -92,14 +86,30 @@ async function sendEmailWithAttachment(
 
 const recipients = [
 
-{
-  name:"chioma odielih",
-  email:"omaotito@gmail.com"
-},
-// {
-//   name:"venkata naga ganesh uka",
-//   email:"ukavnganesh2002@gmail.com"
-// }
+  {
+    "name": "Paramita",
+    "email": "bparamita16@gmail.com"
+  },
+  {
+    "name": "Ishita Roy",
+    "email": "ishitar166@gmail.com"
+  },
+  {
+    "name": "Sameer",
+    "email": "ms1634887@gmail.com"
+  },
+  {
+    "name": "Rimsha Ishfaq",
+    "email": "rimshaishfaq86@gmail.com"
+  },
+  {
+    "name": "Sushma",
+    "email": "sushmabanushaik8@gmail.com"
+  },
+  {
+    "name": "Shivesh",
+    "email": "sz9196@srmist.edu.in"
+  }
 ];
 
 Promise.all(
