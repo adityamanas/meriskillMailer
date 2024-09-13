@@ -3,16 +3,17 @@ const ejs = require("ejs");
 const cors = require("cors");
 const fs = require("fs/promises");
 const path = require("path");
-const puppeteer = require("puppeteer");
+const { chromium } = require("playwright"); // Import Playwright's chromium
 
 const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 app.use(cors());
-// Helper function to generate the PDF
+
+// Helper function to generate the PDF using Playwright
 async function generatePDF(htmlContent) {
   try {
-    const browser = await puppeteer.launch({ headless: "new" });
+    const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage();
     await page.setContent(htmlContent);
 
@@ -84,6 +85,9 @@ app.post("/generate-offer/:type", async (req, res) => {
     res.status(500).send("An error occurred while processing your request.");
   }
 });
-app.listen(5500, () => {
-  console.log("Server Downlad started on port 5500");
+
+// Start the server
+const PORT = process.env.PORT || 5500;
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
