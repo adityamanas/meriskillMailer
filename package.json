@@ -5,9 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "install": "npm install && npm run postinstall",
         "postinstall": "npx puppeteer browsers install chrome",
-        "start": "node downloadPDF"
+        "start": "npm run postinstall && node downloadPDF"
     },
     "keywords": [],
     "author": "",
