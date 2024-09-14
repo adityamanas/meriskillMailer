@@ -1,22 +1,20 @@
 {
-  "name": "mailer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "ejs": "^3.1.9",
-    "express": "^4.20.0",
-    "nodemailer": "^6.9.8",
-    "nodemon": "^3.0.3",
-    "pdfmake": "^0.1.68",
-    "playwright": "^1.47.0",
-    "promise": "^8.3.0"
-  }
+    "name": "mailer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node downloadPDF"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "ejs": "^3.1.10",
+        "express": "^4.20.0",
+        "nodemon": "^3.0.3",
+        "puppeteer": "^23.3.0"
+    }
 }
