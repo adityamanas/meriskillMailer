@@ -85,31 +85,21 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-
-  {
-    "name": "Paramita",
-    "email": "bparamita16@gmail.com"
-  },
-  {
-    "name": "Ishita Roy",
-    "email": "ishitar166@gmail.com"
-  },
-  {
-    "name": "Sameer",
-    "email": "ms1634887@gmail.com"
-  },
-  {
-    "name": "Rimsha Ishfaq",
-    "email": "rimshaishfaq86@gmail.com"
-  },
-  {
-    "name": "Sushma",
-    "email": "sushmabanushaik8@gmail.com"
-  },
-  {
-    "name": "Shivesh",
-    "email": "sz9196@srmist.edu.in"
-  }
+  { name: "Paul Ajayi", email: "ajayipaulekundayo@gmail.com" },
+  { name: "Amit", email: "amitjana845975@gmail.com" },
+  { name: "Areej", email: "areejchattha@gmail.com" },
+  { name: "Ashutosh Pandey", email: "ashupandey8858@gmail.com" },
+  { name: "Temitope", email: "cutemosun@gmail.com" },
+  { name: "Deep Singh", email: "deepsingh43349@gmail.com" },
+  { name: "Epifanio Trindade", email: "epifaniogtrindade@gmail.com" },
+  { name: "Gibi", email: "igibigeorge@gmail.com" },
+  { name: "Navneet", email: "navneet120288@gmail.com" },
+  { name: "Omar", email: "Og43799@gmail.com" },
+  { name: "Pramod Kumar Srivastava", email: "pramod31769@gmail.com" },
+  { name: "Riyan", email: "riyanmarediar@gmail.com" },
+  { name: "Md Shazzad", email: "sdhnold@gmail.com" },
+  { name: "Sona", email: "sibichansona@gmail.com" },
+  { name: "Tamilmani", email: "tamiljan31@gmail.com" }
 ];
 
 Promise.all(

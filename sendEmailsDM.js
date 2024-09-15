@@ -87,13 +87,10 @@ async function sendEmailWithAttachment(
 const recipients = [
 
   {
-    "name": "Mohammad Aquib Akhtar",
-    "email": "aquibakhtar2001@gmail.com"
+    "name": "zainab",
+    "email": "z31713940@gmail.com"
   },
-  {
-    "name": "Ayat",
-    "email": "ayatezzaldieneco@gmail.com"
-  },
+
 ];
 
 Promise.all(
