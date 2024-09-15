@@ -57,6 +57,9 @@ const templatePaths = {
     DM: "templates/toutcheDigitalMarketing.ejs",
     BA: "templates/plateueBusiness.ejs",
     MA: "templates/microLabsMarketing.ejs",
+    BE: "templates/scrapmycarBE.ejs",
+    FE: "templates/prksFE.ejs"
+
 }
 
 // Dynamic route handler for generating PDFs
