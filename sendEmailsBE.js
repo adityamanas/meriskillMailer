@@ -85,17 +85,18 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-
-
-  { "name": "Vina Khandare", "email": "khandarevina@gmail.com" },
-  { "name": "Maria", "email": "Maria2105364@miuegypt.edu.eg" },
-  { "name": "Mary", "email": "maryotiato22@gmail.com" },
-  { "name": "Nisaruddin Mohammed", "email": "mohammednisaruddin81@gmail.com" },
-  { "name": "Saad", "email": "sadkazi2714@gmail.com" },
-  { "name": "Sihle Mbatha", "email": "Sihlemba301@gmail.com" },
-  { "name": "R Vijaya Divakar", "email": "vijay.rachamani@gmai.com" },
-  { "name": "Younis Shaikh", "email": "younisahmed0753@gmail.com" },
-  { "name": "Muhammad Zuraiz Zia", "email": "zuraizkhan229@gmail.com" }
+  { "name": "Debojit", "email": "debojitchoudhury117@gmail.com" },
+  { "name": "Mahesh Jadhav", "email": "maheshjadhav92229@gmail.com" },
+  { "name": "Fanou Noudehouenou Freddy", "email": "noudehouenoufr@gmail.com" },
+  { "name": "Sboniso", "email": "sbonisozama0@gmail.com" },
+  { "name": "Om Prakash Chai", "email": "softtech2077@gmail.com" },
+  { "name": "Ranga Jyothika Vijaya Sravya", "email": "21501a12a4@pvpsit.ac.in" },
+  { "name": "David Segun", "email": "segdavid03@gmail.com" },
+  { "name": "Raghad", "email": "raghaduni1004@gmail.com" },
+  { "name": "Vedant", "email": "Rangomalepapa@gmail.com" },
+  { "name": "Asharamia", "email": "ajohnson5473@gmail.com" },
+  { "name": "Akash Jadhav", "email": "akashjadhav7040253178@gmail.com" },
+  { "name": "Hunain", "email": "hunainasif2004@gmail.com" }
 
 ];
 
@@ -103,9 +104,9 @@ Promise.all(
   recipients.map((recipient) =>
     sendEmailWithAttachment(
       recipient.email,
-      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your Business Analyst Program!      `,
+      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your Backend Program!      `,
       "offerLetterMS",
-      "plateueBusiness",
+      "scrapmycarBE",
       { name: recipient.name }
     )
   )

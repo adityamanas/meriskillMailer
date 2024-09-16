@@ -85,13 +85,16 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-  { name: "Abubakar Iftikhar", email: "Bakarali456@gmail.com" },
-  { name: "Bilal Khan", email: "bilalkhan31c7@gmail.com" },
-  { name: "Deepak", email: "dmyadav2024@gmail.com" },
-  { name: "Shaili Tiwari", email: "drshailitiwari109@gmail.com" },
-  { name: "Saloni", email: "salonimandhani9@gmail.com" },
-  { name: "Dina", email: "sennounidina2021@gmail.com" },
-  { name: "Vivek", email: "vivekneel8@gmail.com" }
+  { "name": "Abubakar Iftikhar", "email": "Bakarali456@gmail.com" },
+  { "name": "Deepak", "email": "dmyadav2024@gmail.com" },
+  { "name": "Dina", "email": "sennounidina2021@gmail.com" },
+  { "name": "Samreen", "email": "samreenshaik4120@gmail.com" },
+  { "name": "Raheemah Abdullateef", "email": "darhmeeyluv@gmail.com" },
+  { "name": "Gerald", "email": "geraldkufanga@gmail.com" },
+  { "name": "Lakshmi Prasanna", "email": "Lakshmiprasannamorla2004@gmail.com" },
+  { "name": "Purnendu Bhowmick", "email": "madhobibhowmick3@gmail.com" },
+  { "name": "Abhishek Sharma", "email": "sharmasubh45@gmail.com" }
+
 ];
 
 Promise.all(

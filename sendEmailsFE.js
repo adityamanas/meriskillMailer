@@ -87,15 +87,14 @@ async function sendEmailWithAttachment(
 const recipients = [
 
 
-  { "name": "Vina Khandare", "email": "khandarevina@gmail.com" },
-  { "name": "Maria", "email": "Maria2105364@miuegypt.edu.eg" },
-  { "name": "Mary", "email": "maryotiato22@gmail.com" },
-  { "name": "Nisaruddin Mohammed", "email": "mohammednisaruddin81@gmail.com" },
-  { "name": "Saad", "email": "sadkazi2714@gmail.com" },
-  { "name": "Sihle Mbatha", "email": "Sihlemba301@gmail.com" },
-  { "name": "R Vijaya Divakar", "email": "vijay.rachamani@gmai.com" },
-  { "name": "Younis Shaikh", "email": "younisahmed0753@gmail.com" },
-  { "name": "Muhammad Zuraiz Zia", "email": "zuraizkhan229@gmail.com" }
+  { "name": "Kishan Kumar Prajapati", "email": "kishann.cpj@gmail.com" },
+  { "name": "Saurav Saurav", "email": "sauravsinha740@gmail.com" },
+  { "name": "Anurag", "email": "anuragtippa665@gmail.com" },
+  { "name": "Mohammad Kaleem Basha", "email": "doraemon242005@gmail.com" },
+  { "name": "Naina", "email": "naina9ny@gmail.com" },
+  { "name": "Rutuja Chandrakant Badadhe", "email": "rutujabadadhe05@gmail.com" },
+  { "name": "Mahnoor Shams", "email": "shamsmahnoor880@gmail.com" }
+
 
 ];
 
@@ -103,9 +102,9 @@ Promise.all(
   recipients.map((recipient) =>
     sendEmailWithAttachment(
       recipient.email,
-      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your Business Analyst Program!      `,
+      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your Digital Marketing Program!      `,
       "offerLetterMS",
-      "plateueBusiness",
+      "prksFE",
       { name: recipient.name }
     )
   )
