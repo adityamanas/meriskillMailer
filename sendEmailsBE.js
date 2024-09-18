@@ -85,18 +85,14 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-  { "name": "Debojit", "email": "debojitchoudhury117@gmail.com" },
-  { "name": "Mahesh Jadhav", "email": "maheshjadhav92229@gmail.com" },
-  { "name": "Fanou Noudehouenou Freddy", "email": "noudehouenoufr@gmail.com" },
-  { "name": "Sboniso", "email": "sbonisozama0@gmail.com" },
-  { "name": "Om Prakash Chai", "email": "softtech2077@gmail.com" },
-  { "name": "Ranga Jyothika Vijaya Sravya", "email": "21501a12a4@pvpsit.ac.in" },
-  { "name": "David Segun", "email": "segdavid03@gmail.com" },
-  { "name": "Raghad", "email": "raghaduni1004@gmail.com" },
-  { "name": "Vedant", "email": "Rangomalepapa@gmail.com" },
-  { "name": "Asharamia", "email": "ajohnson5473@gmail.com" },
-  { "name": "Akash Jadhav", "email": "akashjadhav7040253178@gmail.com" },
-  { "name": "Hunain", "email": "hunainasif2004@gmail.com" }
+  {
+    "name": "Nishan Shrestha",
+    "email": "battulalshrestha198@gmail.com"
+  },
+  {
+    "name": "Richard Acheampong",
+    "email": "mrbarko8@gmail.com"
+  }
 
 ];
 

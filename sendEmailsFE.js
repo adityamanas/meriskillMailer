@@ -86,14 +86,46 @@ async function sendEmailWithAttachment(
 
 const recipients = [
 
-
-  { "name": "Kishan Kumar Prajapati", "email": "kishann.cpj@gmail.com" },
-  { "name": "Saurav Saurav", "email": "sauravsinha740@gmail.com" },
-  { "name": "Anurag", "email": "anuragtippa665@gmail.com" },
-  { "name": "Mohammad Kaleem Basha", "email": "doraemon242005@gmail.com" },
-  { "name": "Naina", "email": "naina9ny@gmail.com" },
-  { "name": "Rutuja Chandrakant Badadhe", "email": "rutujabadadhe05@gmail.com" },
-  { "name": "Mahnoor Shams", "email": "shamsmahnoor880@gmail.com" }
+  {
+    "name": "Ahmed",
+    "email": "ahmedsann22@gmail.com"
+  },
+  {
+    "name": "Bishal",
+    "email": "aryalbishal9876@gmail.com"
+  },
+  {
+    "name": "Aulona",
+    "email": "aulonaxhabli@gmail.com"
+  },
+  {
+    "name": "Muhammad Hassan Akhtar",
+    "email": "chwdryhassan@gmail.com"
+  },
+  {
+    "name": "Gowtham",
+    "email": "gowthamsurya411@gmail.com"
+  },
+  {
+    "name": "Hardik Maheshwari",
+    "email": "hardikmaheshwari828@gmail.com"
+  },
+  {
+    "name": "Lorraine",
+    "email": "lorrainemwoy@gmail.com"
+  },
+  {
+    "name": "Blessing",
+    "email": "okorieblessing.ogbonnaya@gmail.com"
+  },
+  {
+    "name": "Shubham Chauhan",
+    "email": "shubhamchauhanpoly@gmail.com"
+  },
+  {
+    "name": "Unnati Pal",
+    "email": "unnnatipal@gmail.com"
+  }
 
 
 ];

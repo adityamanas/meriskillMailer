@@ -86,16 +86,62 @@ async function sendEmailWithAttachment(
 
 const recipients = [
 
-
-  { "name": "Vina Khandare", "email": "khandarevina@gmail.com" },
-  { "name": "Maria", "email": "Maria2105364@miuegypt.edu.eg" },
-  { "name": "Mary", "email": "maryotiato22@gmail.com" },
-  { "name": "Nisaruddin Mohammed", "email": "mohammednisaruddin81@gmail.com" },
-  { "name": "Saad", "email": "sadkazi2714@gmail.com" },
-  { "name": "Sihle Mbatha", "email": "Sihlemba301@gmail.com" },
-  { "name": "R Vijaya Divakar", "email": "vijay.rachamani@gmai.com" },
-  { "name": "Younis Shaikh", "email": "younisahmed0753@gmail.com" },
-  { "name": "Muhammad Zuraiz Zia", "email": "zuraizkhan229@gmail.com" }
+  {
+    "name": "Abigail",
+    "email": "abigailmwnz@gmail.com"
+  },
+  {
+    "name": "Aman Sharma",
+    "email": "aman.sharma.in1@gmail.com"
+  },
+  {
+    "name": "Dhanish Muhammed Roshan",
+    "email": "dhanishmuhammed50@gmail.com"
+  },
+  {
+    "name": "Divya",
+    "email": "Divimadhan09@gmail.com"
+  },
+  {
+    "name": "Gaurav Kumar",
+    "email": "gauravpatel9060@gmail.com"
+  },
+  {
+    "name": "Ritu Jaiswal",
+    "email": "jritujaiswal20@gmail.com"
+  },
+  {
+    "name": "Taiye",
+    "email": "meebabyluv@gmail.com"
+  },
+  {
+    "name": "Merveille",
+    "email": "merveilles.aleka@gmail.com"
+  },
+  {
+    "name": "Nehal",
+    "email": "nehalgore2021@gmail.com"
+  },
+  {
+    "name": "Radhika",
+    "email": "radhikakumbhojkar@gmail.com"
+  },
+  {
+    "name": "Sanjana",
+    "email": "sanjana.kirodian@gmail.com"
+  },
+  {
+    "name": "Soufiane",
+    "email": "soufianelamsaoueb@gmail.com"
+  },
+  {
+    "name": "Tanuja Singh",
+    "email": "stanuja244@gmail.com"
+  },
+  {
+    "name": "Yemi Fatodu",
+    "email": "yemifatodu2@gmail.com"
+  }
 
 ];
 
