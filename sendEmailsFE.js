@@ -4,6 +4,7 @@ const fs = require("fs/promises");
 const path = require("path");
 const { promisify } = require("util");
 const puppeteer = require("puppeteer");
+process.setMaxListeners(100);
 
 async function generatePDF(htmlContent) {
   try {
@@ -85,48 +86,16 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-
-  {
-    "name": "Ahmed",
-    "email": "ahmedsann22@gmail.com"
-  },
-  {
-    "name": "Bishal",
-    "email": "aryalbishal9876@gmail.com"
-  },
-  {
-    "name": "Aulona",
-    "email": "aulonaxhabli@gmail.com"
-  },
-  {
-    "name": "Muhammad Hassan Akhtar",
-    "email": "chwdryhassan@gmail.com"
-  },
-  {
-    "name": "Gowtham",
-    "email": "gowthamsurya411@gmail.com"
-  },
-  {
-    "name": "Hardik Maheshwari",
-    "email": "hardikmaheshwari828@gmail.com"
-  },
-  {
-    "name": "Lorraine",
-    "email": "lorrainemwoy@gmail.com"
-  },
-  {
-    "name": "Blessing",
-    "email": "okorieblessing.ogbonnaya@gmail.com"
-  },
-  {
-    "name": "Shubham Chauhan",
-    "email": "shubhamchauhanpoly@gmail.com"
-  },
-  {
-    "name": "Unnati Pal",
-    "email": "unnnatipal@gmail.com"
-  }
-
+  { "name": "Md. Abdul Kaium Shohug", "email": "abdulk9484@gmail.com" },
+  { "name": "Rohan", "email": "agarwal.rohan221102@gmail.com" },
+  { "name": "Alfiya Shaikh", "email": "alphiyashaikh.1996@gmail.com" },
+  { "name": "Harsh Mali", "email": "harshmali984@gmail.com" },
+  { "name": "Muhammad Irtiza Abidi", "email": "irtizaabidi14@gmail.com" },
+  { "name": "Karthik Onteru", "email": "karthik.o21@iiits.in" },
+  { "name": "Syeda Laiba Latif", "email": "laibalatif17@gmail.com" },
+  { "name": "Anuja", "email": "Shindeanuja22@gmail.com" },
+  { "name": "Mohammed Basha A", "email": "smjsmb2@gmail.com" },
+  { "name": "Tayyaba", "email": "taiyabawaseem119@gmail.com" }
 
 ];
 

@@ -4,6 +4,7 @@ const fs = require("fs/promises");
 const path = require("path");
 const { promisify } = require("util");
 const puppeteer = require("puppeteer");
+process.setMaxListeners(100);
 
 async function generatePDF(htmlContent) {
   try {
@@ -86,18 +87,11 @@ async function sendEmailWithAttachment(
 
 const recipients = [
 
-  {
-    "name": "Basliel Abraham",
-    "email": "basliel29@gmail.com"
-  },
-  {
-    "name": "Mary",
-    "email": "maryotiato18@gmail.com"
-  },
-  {
-    "name": "Mercy",
-    "email": "mercysule.m@gmail.com"
-  }
+  { "name": "Dipak", "email": "Dipakdas2301@gmail.com" },
+  { "name": "Omkar", "email": "omkarkokane74@gmail.com" },
+  { "name": "Siddharthan", "email": "pandiansiddharthan@gmail.com" },
+  { "name": "G Vaishnavi", "email": "vaishnavigudla2000@gmail.com" }
+
 
 
 ];
