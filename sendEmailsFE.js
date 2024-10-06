@@ -51,19 +51,19 @@ async function sendEmailWithAttachment(
 
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      host: "smtp.hostinger.com",
       port: 465,
       secure: true,
       auth: {
-        user: "no-reply@meriskill.com",
-        pass: "meriskill@cohi24",
+        user: "hello@meriskill.in",
+        pass: "Meriskill@cohi24",
       },
     });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      from: "no-reply@meriskill.com",
+      from: `"MeriSkill" <hello@meriskill.in>"`,
 
 
       to,
@@ -86,17 +86,54 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-  { "name": "Md. Abdul Kaium Shohug", "email": "abdulk9484@gmail.com" },
-  { "name": "Rohan", "email": "agarwal.rohan221102@gmail.com" },
-  { "name": "Alfiya Shaikh", "email": "alphiyashaikh.1996@gmail.com" },
-  { "name": "Harsh Mali", "email": "harshmali984@gmail.com" },
-  { "name": "Muhammad Irtiza Abidi", "email": "irtizaabidi14@gmail.com" },
-  { "name": "Karthik Onteru", "email": "karthik.o21@iiits.in" },
-  { "name": "Syeda Laiba Latif", "email": "laibalatif17@gmail.com" },
-  { "name": "Anuja", "email": "Shindeanuja22@gmail.com" },
-  { "name": "Mohammed Basha A", "email": "smjsmb2@gmail.com" },
-  { "name": "Tayyaba", "email": "taiyabawaseem119@gmail.com" }
-
+  {
+    "name": "Vishal Digal",
+    "email": "digalbabita013@gmail.com"
+  },
+  {
+    "name": "Festus",
+    "email": "festusaadeboye@gmail.com"
+  },
+  {
+    "name": "Tanatswa Mlambo",
+    "email": "mlambotanatswa21@gmail.com"
+  },
+  {
+    "name": "Payal",
+    "email": "prajapatipayal651@gmail.com"
+  },
+  {
+    "name": "K. Priya Dharshini",
+    "email": "priyakanthan2023@gmail.com"
+  },
+  {
+    "name": "Safina Zainab",
+    "email": "reachsafina@gmail.com"
+  },
+  {
+    "name": "Rishabh Kumar",
+    "email": "rishabhkuamr1748@gmail.com"
+  },
+  {
+    "name": "Samarjit",
+    "email": "samarjitmoh@outlook.com"
+  },
+  {
+    "name": "Tapan Deka",
+    "email": "td286155@gmail.com"
+  },
+  {
+    "name": "Vinod Singh Patel",
+    "email": "vinodsinghpatel2630@gmail.com"
+  },
+  {
+    "name": "Xoliswa",
+    "email": "xlswmafutha@gmail.com"
+  },
+  {
+    "name": "Boutayna",
+    "email": "zakariboutayna02@gmail.com"
+  }
 ];
 
 Promise.all(

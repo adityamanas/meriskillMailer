@@ -51,19 +51,19 @@ async function sendEmailWithAttachment(
 
   
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      host: "smtp.hostinger.com",
       port: 465,
       secure: true,
       auth: {
-        user: "no-reply@meriskill.com",
-        pass: "meriskill@cohi24",
+        user: "hello@meriskill.in",
+        pass: "Meriskill@cohi24",
       },
     });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      from: "no-reply@meriskill.com",
+      from: `"MeriSkill Support" <hello@meriskill.in>"`,
 
 
       to,
@@ -87,40 +87,104 @@ async function sendEmailWithAttachment(
 
 const recipients = [
   {
-    "name": "Bhagyalakshmi H S",
-    "email": "blakshmi08600@gmail.com"
+    "name": "Keerthana",
+    "email": "124150021@sastra.ac.in"
   },
   {
-    "name": "Siphesihle",
-    "email": "c.claire8911@gmail.com"
+    "name": "Keerthana",
+    "email": "aditya.manas01@gmail.com"
   },
   {
-    "name": "Danish Kabir",
-    "email": "Danishkabir1@gmail.com"
+    "name": "Amiya Ranjan Nayak",
+    "email": "amiyaranjannayak37@gmail.com"
   },
   {
-    "name": "Emtu Rani Paul",
-    "email": "emturanipaul321@gmail.com"
+    "name": "Asmae",
+    "email": "asmaezzahyy@gmail.com"
   },
   {
-    "name": "Karan Gautam",
-    "email": "karan.g1997@outlook.com"
+    "name": "Kiran Dalmiya",
+    "email": "dalmiyakiran@gmail.com"
   },
   {
-    "name": "Mathan",
-    "email": "mathanthangadurai@gmail.com"
+    "name": "Devanshu",
+    "email": "devanshud.aiml22@sbjit.edu.in"
   },
   {
-    "name": "Mbalenhle Diba",
-    "email": "mbalenhlediba008@gmail.com"
+    "name": "Drishti",
+    "email": "drishtirajput9024@gmail.com"
   },
   {
-    "name": "Megha Ingle",
-    "email": "mringle20@gmail.com"
+    "name": "Edrin",
+    "email": "edrin24thomas@gmail.com"
   },
   {
-    "name": "Shashank KC",
-    "email": "sg705873@gmail.com"
+    "name": "Fada Fazin",
+    "email": "Fadafazin0@gmail.com"
+  },
+  {
+    "name": "Habib",
+    "email": "hab_sh@yahoo.com"
+  },
+  {
+    "name": "Hania",
+    "email": "haniakhaled91@gmail.com"
+  },
+  {
+    "name": "Hamza Ahmed Khan Sundu",
+    "email": "hzahmed23@gmail.com"
+  },
+  {
+    "name": "Murtaza",
+    "email": "Murtazamanzoor2801@gmail.com"
+  },
+  {
+    "name": "Panashe",
+    "email": "panashewhispermatarutse@hotmail.com"
+  },
+  {
+    "name": "Rahmad Hidayad",
+    "email": "rhmad.yayat102@gmail.com"
+  },
+  {
+    "name": "Robin K Philip",
+    "email": "robinkphilipp8018@gmail.com"
+  },
+  {
+    "name": "Juhi",
+    "email": "saxenajuhi111@gmail.com"
+  },
+  {
+    "name": "Sesugh Agbadu",
+    "email": "sesughagbadu@yahoo.com"
+  },
+  {
+    "name": "Sharvesh Vishnu K",
+    "email": "sharveshvishnu00@gmail.com"
+  },
+  {
+    "name": "Masna Shivaram",
+    "email": "shivanetha2299@gmail.com"
+  },
+  {
+    "name": "Suksham",
+    "email": "suksham8371@gmail.com"
+  },
+  {
+    "name": "Muhammad Talha",
+    "email": "talhaanwarr@proton.me"
+  },
+  {
+    "name": "Vijeta",
+    "email": "vijeta.mum.dbda@gmail.com"
+  },
+  {
+    "name": "Waleed Akram",
+    "email": "waleedakram035@gmail.com"
+  },
+  {
+    "name": "Muhammad Yousuf Shaikh",
+    "email": "yosuufshaikh3883@gmail.com"
   }
 ];
 

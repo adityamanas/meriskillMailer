@@ -51,19 +51,19 @@ async function sendEmailWithAttachment(
 
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      host: "smtp.hostinger.com",
       port: 465,
       secure: true,
       auth: {
-        user: "no-reply@meriskill.com",
-        pass: "meriskill@cohi24",
+        user: "hello@meriskill.in",
+        pass: "Meriskill@cohi24",
       },
     });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      from: "no-reply@meriskill.com",
+      from: `"MeriSkill" <hello@meriskill.in>"`,
 
 
       to,
@@ -86,20 +86,22 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-
-  { "name": "Annel", "email": "anneladwoaakumagyesi@gmail.com" },
-  { "name": "Leticia Okyerewa Onoma", "email": "leticiaonoma429@gmail.com" },
-  { "name": "Sihle M Maseko", "email": "Mbalienhlepearl337@gmail.com" },
-  { "name": "Michael Adekoya", "email": "Michaeladekoya2020@gmail.com" },
-  { "name": "Bridget Tendai Muringisi", "email": "muringisib@gmail.com" },
-  { "name": "Neha", "email": "nehagodse134@gmail.com" },
-  { "name": "Praise", "email": "praisemugano50@gmail.com" },
-  { "name": "Sana Albi", "email": "sanaalbi405@gmail.com" },
-  { "name": "Sanandita", "email": "sananditadas165@gmail.com" },
-  { "name": "Shoa", "email": "shoanwar2910@gmail.com" },
-  { "name": "Tshepo Mohono", "email": "tshepomohono@gmail.com" },
-  { "name": "Mary Gooding", "email": "Vibespheremarketing247@gmail.com" },
-  { "name": "Allan Reuel M", "email": "wetestinitall@gmail.com" }
+  {
+    "name": "Esther",
+    "email": "esther.onyekere@armpension.com"
+  },
+  {
+    "name": "Anurag",
+    "email": "pantkvno1rke2008@gmail.com"
+  },
+  {
+    "name": "Likhona",
+    "email": "potalikhona@gmail.com"
+  },
+  {
+    "name": "Tanya Tewari",
+    "email": "tanyatewari282@gmail.com"
+  }
 
 ];
 

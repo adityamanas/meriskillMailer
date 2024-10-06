@@ -51,19 +51,19 @@ async function sendEmailWithAttachment(
 
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      host: "smtp.hostinger.com",
       port: 465,
       secure: true,
       auth: {
-        user: "no-reply@meriskill.com",
-        pass: "meriskill@cohi24",
+        user: "hello@meriskill.in",
+        pass: "Meriskill@cohi24",
       },
     });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      from: "no-reply@meriskill.com",
+      from: `"MeriSkill Support" <hello@meriskill.in>"`,
 
 
       to,
@@ -86,13 +86,19 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-  { "name": "Muhammad Hassan", "email": "hassansoftwaredeveloper@gmail.com" },
-  { "name": "Kajal", "email": "kajalkeshri80@gmail.com" },
-  { "name": "Naoures", "email": "knaninaoures5@gmail.com" },
-  { "name": "Lindiwe Thabsile Dlomo", "email": "lindiwethaby96@gmail.com" },
-  { "name": "Shekhar", "email": "notshekhar@gmail.com" },
-  { "name": "Ransford Nyatsikor", "email": "ransfordnyatsikor@gmail.com" },
-  { "name": "Ismail", "email": "smailber28@gmail.com" }
+  {
+    "name": "Abhilash Reddy",
+    "email": "abhilashreddy52956@gmail.com"
+  },
+  {
+    "name": "Ashwani Verma",
+    "email": "Ashwaniverm077@gmail.com"
+  },
+  {
+    "name": "Pulane",
+    "email": "ralethokop@gmail.com"
+  }
+
 
 ];
 

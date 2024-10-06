@@ -51,19 +51,19 @@ async function sendEmailWithAttachment(
 
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      host: "smtp.hostinger.com",
       port: 465,
       secure: true,
       auth: {
-        user: "no-reply@meriskill.com",
-        pass: "meriskill@cohi24",
+        user: "hello@meriskill.in",
+        pass: "Meriskill@cohi24",
       },
     });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      from: "no-reply@meriskill.com",
+      from: `"MeriSkill" <hello@meriskill.in>"`,
 
 
       to,
@@ -86,33 +86,110 @@ async function sendEmailWithAttachment(
 }
 
 const recipients = [
-  { "name": "Abhishek Sangam", "email": "abhisheksangam46@gmail.com" },
-  { "name": "Anitha Durai", "email": "anithatheru@gmail.com" },
-  { "name": "Arpita Gupta", "email": "arpita03gupta05@gmail.com" },
-  { "name": "Arpita Gupta", "email": "arpitagupta3500@gmail.com" },
-  { "name": "Aya", "email": "ayabenhamri40@gmail.com" },
-  { "name": "Abisola", "email": "bisola287@gmail.com" },
-  { "name": "Blessing Iwerumor", "email": "blessnko@gmail.com" },
-  { "name": "Raymond", "email": "etchumac@gmail.com" },
-  { "name": "Yash", "email": "godboleyash1@gmail.com" },
-  { "name": "Muhammad Husnain Shahid", "email": "husnainshahid451@gmail.com" },
-  { "name": "Mejd", "email": "Jerbimejd39@gmail.com" },
-  { "name": "Juliana John", "email": "julianajohn0128@gmail.com" },
-  { "name": "David Oluwatomisin Oluwatayo", "email": "odavidoluwatayo@gmail.com" },
-  { "name": "Roseline", "email": "ojomaalfa.roa@gmail.com" },
-  { "name": "Oladun", "email": "Oladun60@gmail.com" },
-  { "name": "Selby Masemola", "email": "onlinestudies45@gmail.com" },
-  { "name": "Bolanle", "email": "Oyebolabolanle1@gmail.com" },
-  { "name": "Prishita", "email": "prishita.parmar@klecbalc.edu.in" },
-  { "name": "Raza Lakho", "email": "razalakhani@yahoo.com" },
-  { "name": "Krishna Chodha", "email": "rickwalker010@gmail.com" },
-  { "name": "Rukayat", "email": "rukayatodunola114@gmail.com" },
-  { "name": "Rosemary", "email": "rwangeci8@gmail.com" },
-  { "name": "Shinde Utkarsha Namdevrao", "email": "shindeutkarsha1000@gmail.com" },
-  { "name": "Simboro Rydouane", "email": "simbororydouane2001@gmail.com" },
-  { "name": "Sarfraz Nawaz", "email": "ssnawaz1471@gmail.com" },
-  { "name": "Temitope", "email": "topethompson2019@gmail.com" },
-  { "name": "Mithilesh V", "email": "vmithilesh2003@gmail.com" }
+  {
+    "name": "Abhik Kumar",
+    "email": "abhikkumar300@gmail.com"
+  },
+  {
+    "name": "Aniket Gajghate",
+    "email": "aniketgajghate41@gmail.com"
+  },
+  {
+    "name": "Anushree",
+    "email": "anushree.rajha@gmail.com"
+  },
+  {
+    "name": "David",
+    "email": "davidwoju@gmail.com"
+  },
+  {
+    "name": "Muhammad",
+    "email": "dawood.analytics@gmail.com"
+  },
+  {
+    "name": "Divya Singh",
+    "email": "divyasingh2509@gmail.com"
+  },
+  {
+    "name": "Masoyi Keletuma Mailaya",
+    "email": "elitestrader30@gmail.com"
+  },
+  {
+    "name": "Francis",
+    "email": "fadarkwah5@gmail.com"
+  },
+  {
+    "name": "Harris",
+    "email": "hariteks@yahoo.co.uk"
+  },
+  {
+    "name": "Maryam Id-Hssain",
+    "email": "maryam.idhssain2001@gmail.com"
+  },
+  {
+    "name": "Mikhail",
+    "email": "mekhealmagdy213@gmail.com"
+  },
+  {
+    "name": "Mostafa",
+    "email": "mostafa.akesbi@gmail.com"
+  },
+  {
+    "name": "Mrdul",
+    "email": "mrdulgaur@gmail.com"
+  },
+  {
+    "name": "Isaac",
+    "email": "obuya.i29@yahoo.com"
+  },
+  {
+    "name": "Oche",
+    "email": "ocheabel28@gmail.com"
+  },
+  {
+    "name": "Olufemi",
+    "email": "olufemiolawore@gmail.com"
+  },
+  {
+    "name": "Parveen Singh",
+    "email": "Psbhandari001@gmail.com"
+  },
+  {
+    "name": "Sadia",
+    "email": "sadianowshinporoma@gmail.com"
+  },
+  {
+    "name": "Dura E Shehwar",
+    "email": "shehwar292471@gmail.com"
+  },
+  {
+    "name": "Malidevaraju Sushanth Kumar",
+    "email": "sushanthraju.2183@gmail.com"
+  },
+  {
+    "name": "Stephanie",
+    "email": "swaro749@gmail.com"
+  },
+  {
+    "name": "Muhammad Talha",
+    "email": "talhaanwarr6@gmail.com"
+  },
+  {
+    "name": "Vicky Verma",
+    "email": "vickyvermaeecd@gmail.com"
+  },
+  {
+    "name": "Vineet",
+    "email": "vineettewari.80@gmail.com"
+  },
+  {
+    "name": "Wycliffe Adek",
+    "email": "wickyadek@gmail.com"
+  },
+  {
+    "name": "Yetunde",
+    "email": "yetunde1403@gmail.com"
+  }
 ];
 
 Promise.all(
