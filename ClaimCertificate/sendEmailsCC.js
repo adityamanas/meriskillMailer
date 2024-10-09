@@ -49,7 +49,7 @@ async function sendEmailWithAttachment(
 
     const pdfBuffer = await generatePDF(compiledPdfTemplate);
 
-  
+
     const transporter = nodemailer.createTransport({
       host: "smtp.hostinger.com",
       port: 465,
@@ -63,7 +63,7 @@ async function sendEmailWithAttachment(
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      from: `"MeriSkill Support" <hello@meriskill.in>"`,
+      from: `"MeriSkill" <hello@meriskill.in>"`,
 
 
       to,
@@ -87,52 +87,8 @@ async function sendEmailWithAttachment(
 
 const recipients = [
   {
-    "name": "Asmae",
-    "email": "asmaezzahyy@gmail.com"
-  },
-  {
-    "name": "Edrin",
-    "email": "edrin24thomas@gmail.com"
-  },
-  {
-    "name": "Muhammad Ansar",
-    "email": "engr.mianansar24@gmail.com"
-  },
-  {
-    "name": "Kunal",
-    "email": "Kunalchinche1997@gmail.com"
-  },
-  {
-    "name": "Abdullah Qazi",
-    "email": "qabdullah513@gmail.com"
-  },
-  {
-    "name": "Ravi Sharma",
-    "email": "ravi.sharma9230@gmail.com"
-  },
-  {
-    "name": "Robin K Philip",
-    "email": "robinkphilipp8018@gmail.com"
-  },
-  {
-    "name": "Masna Shivaram",
-    "email": "shivanetha2299@gmail.com"
-  },
-  {
-    "name": "Suksham",
-    "email": "suksham8371@gmail.com"
-  },
-  {
-    "name": "Uba Chinyere",
-    "email": "theresachinyere102@gmail.com"
-  },
-  {
-    "name": "Vijeta",
-    "email": "vijeta.mum.dbda@gmail.com"
-  },
-  {
-    "name": "Waleed Akram",
-    "email": "waleedakram035@gmail.com"
+    name:"Aditya Pandey",
+    email:"aditya.manas01@gmail.com"
   }
 ];
 
@@ -140,9 +96,9 @@ Promise.all(
   recipients.map((recipient) =>
     sendEmailWithAttachment(
       recipient.email,
-      `${recipient?.name}, Your Offer Letter from MeriSkill – Access Your AI Developer Program!      `,
-      "offerLetterMS",
-      "toutcAiEngineer",
+      `${recipient?.name}, Claim Your Certificate of Completion & Letter of Recommendation – Only 5 Days Left!      `,
+      "offerLetterCC",
+      // "plateueBusiness",
       { name: recipient.name }
     )
   )

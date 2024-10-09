@@ -51,19 +51,19 @@ async function sendEmailWithAttachment(
 
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
+      host: "smtp.hostinger.com",
       port: 465,
       secure: true,
       auth: {
-        user: "no-reply@meriskill.com",
-        pass: "meriskill@cohi24",
+        user: "hello@meriskill.in",
+        pass: "Meriskill@cohi24",
       },
     });
 
     const pdfFileName = `${data.name}_offerLetter.pdf`;
 
     const mailOptions = {
-      from: "no-reply@meriskill.com",
+      from: `"MeriSkill" <hello@meriskill.in>"`,
 
 
       to,
@@ -85,9 +85,26 @@ async function sendEmailWithAttachment(
   }
 }
 
-const recipients = [
-  { "name": "tapan deka", "email": "td286155@gmail.com" },
-];
+const recipients = 
+  [
+    {
+      "name": "Darshan Bhirud",
+      "email": "darshanbhirud25@gmail.com"
+    },
+    {
+      "name": "Prashant Rajput",
+      "email": "rps210120@gmail.com"
+    },
+    {
+      "name": "Rudranshu",
+      "email": "rudranshukatyayan.2023@associate.scmspune.ac.in"
+    },
+    {
+      "name": "Tumelo",
+      "email": "tumelonchabelengaa@gmail.com"
+    }
+  ]
+
 
 Promise.all(
   recipients.map((recipient) =>

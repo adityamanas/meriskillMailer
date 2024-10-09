@@ -91,14 +91,13 @@ const recipients = [
     "email": "abhilashreddy52956@gmail.com"
   },
   {
-    "name": "Ashwani Verma",
-    "email": "Ashwaniverm077@gmail.com"
+    "name": "Diego",
+    "email": "Diegocupido25@gmail.com"
   },
   {
-    "name": "Pulane",
-    "email": "ralethokop@gmail.com"
+    "name": "Ilyes",
+    "email": "ilyes.kasdallah@supcom.tn"
   }
-
 
 ];
 
